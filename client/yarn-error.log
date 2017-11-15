@@ -1,0 +1,84 @@
+Arguments: 
+  C:\Users\Maxime\Desktop\laragon\bin\nodejs\node-v6.11.0-x64\node.exe C:\Users\Maxime\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js install
+
+PATH: 
+  C:\Users\Maxime\AppData\Local\Yarn\config\global\node_modules\.bin;C:\Users\Maxime\AppData\Roaming\npm;C:\Users\Maxime\AppData\Roaming\Composer\vendor\bin;;C:\Users\Maxime\Desktop\laragon\bin\laragon\utils;C:\Users\Maxime\Desktop\laragon\bin\mysql\mysql-5.7.19-winx64\bin;C:\Users\Maxime\Desktop\laragon\bin\php\php-7.1.7-Win32-VC14-x64;C:\Users\Maxime\Desktop\laragon\bin\composer;C:\Users\Maxime\Desktop\laragon\bin\apache\httpd-2.4.27-win64-VC14\bin;C:\Users\Maxime\Desktop\laragon\bin\redis\redis-x64-3.2.100;C:\Users\Maxime\Desktop\laragon\bin\nodejs\node-v6.11.0-x64;C:\Users\Maxime\Desktop\laragon\bin\yarn\bin;C:\Users\Maxime\Desktop\laragon\bin\nginx\nginx-1.12.0;C:\Users\Maxime\Desktop\laragon\bin\notepad++;C:\Users\Maxime\Desktop\laragon\bin\telnet;C:\Users\Maxime\Desktop\laragon\bin\ngrok;C:\Users\Maxime\Desktop\laragon\bin\git\bin;C:\Users\Maxime\Desktop\laragon\bin\git\cmd;C:\Users\Maxime\Desktop\laragon\bin\git\usr\bin;C:\Users\Maxime\Desktop\laragon\bin\git\mingw64\bin;C:\Users\Maxime\Desktop\laragon\bin;C:\Users\Maxime\Desktop\laragon\usr\bin;C:\Users\Maxime\Desktop\laragon\bin\putty;C:\Users\Maxime\Desktop\laragon\bin\cmder\bin;C:\Users\Maxime\Desktop\laragon\bin\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\Users\Maxime\Desktop\laragon\bin\cmder\vendor\conemu-maximus5;C:\Users\Maxime\Desktop\laragon\bin\cmder\vendor\conemu-maximus5\ConEmu;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\HashiCorp\Vagrant\bin;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Ampps\php-7.0;C:\Users\Maxime\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\Maxime\AppData\Local\Microsoft\WindowsApps;C:\Users\Maxime\AppData\Roaming\npm;C:\Users\Maxime\AppData\Roaming\Composer\vendor\bin;C:\Users\Maxime\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\share\vim\vim74;C:\Users\Maxime\Desktop\laragon\bin\cmder\;
+
+Yarn version: 
+  1.3.2
+
+Node version: 
+  6.11.0
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "client",
+    "version": "0.0.0",
+    "license": "MIT",
+    "scripts": {
+      "ng": "ng",
+      "start": "ng serve",
+      "build": "ng build",
+      "test": "ng test",
+      "lint": "ng lint",
+      "e2e": "ng e2e"
+    },
+    "private": true,
+    "dependencies": {
+      "@angular/animations": "^5.0.0",
+      "@angular/common": "^5.0.0",
+      "@angular/compiler": "^5.0.0",
+      "@angular/core": "^5.0.0",
+      "@angular/forms": "^5.0.0",
+      "@angular/http": "^5.0.0",
+      "@angular/platform-browser": "^5.0.0",
+      "@angular/platform-browser-dynamic": "^5.0.0",
+      "@angular/router": "^5.0.0",
+      "core-js": "^2.4.1",
+      "rxjs": "^5.5.2",
+      "zone.js": "^0.8.14"
+    },
+    "devDependencies": {
+      "@angular/cli": "1.5.0",
+      "@angular/compiler-cli": "^5.0.0",
+      "@angular/language-service": "^5.0.0",
+      "@types/jasmine": "~2.5.53",
+      "@types/jasminewd2": "~2.0.2",
+      "@types/node": "~6.0.60",
+      "codelyzer": "~3.2.0",
+      "jasmine-core": "~2.6.2",
+      "jasmine-spec-reporter": "~4.1.0",
+      "karma": "~1.7.0",
+      "karma-chrome-launcher": "~2.1.1",
+      "karma-cli": "~1.0.1",
+      "karma-coverage-istanbul-reporter": "^1.2.1",
+      "karma-jasmine": "~1.1.0",
+      "karma-jasmine-html-reporter": "^0.2.2",
+      "protractor": "~5.1.2",
+      "ts-node": "~3.2.0",
+      "tslint": "~5.7.0",
+      "typescript": "~2.4.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@angular/common/-/common-5.0.1.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\Users\Maxime\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:123716:19)
+      at ClientRequest.g (events.js:292:16)
+      at emitNone (events.js:86:13)
+      at ClientRequest.emit (events.js:185:7)
+      at TLSSocket.emitTimeout (_http_client.js:629:10)
+      at TLSSocket.g (events.js:292:16)
+      at emitNone (events.js:86:13)
+      at TLSSocket.emit (events.js:185:7)
+      at TLSSocket.Socket._onTimeout (net.js:338:8)
+      at ontimeout (timers.js:386:14)
