@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { MaterialModule } from './material.module';
 import { AppRoutingModule } from './app-routing.module';
+import { BlogModule } from './blog/blog.module';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
@@ -16,6 +17,7 @@ import { FooterComponent } from './shared/footer/footer.component';
     FooterComponent
   ],
   imports: [
+    BlogModule,
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,

@@ -5,12 +5,14 @@ import { HomeComponent } from './home/home.component';
 import { ProjectComponent } from './project/project.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
+import { PageNotFoundComponent } from './notfound/not-found.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'projets', component: ProjectComponent },
   { path: 'blog', component: BlogComponent },
-  { path: 'contact', component: ContactComponent }
+  { path: 'contact', component: ContactComponent },
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
@@ -18,7 +20,8 @@ const routes: Routes = [
     HomeComponent,
     ProjectComponent,
     BlogComponent,
-    ContactComponent
+    ContactComponent,
+    PageNotFoundComponent
   ],
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
