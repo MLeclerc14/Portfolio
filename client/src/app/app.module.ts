@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './material.module';
+import { HomeModule } from './home/home.module';
 import { BlogModule } from './blog/blog.module';
 import { ContactModule } from './contact/contact.module';
 
@@ -23,6 +24,7 @@ import { FooterComponent } from './shared/footer/footer.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     MaterialModule,
+    HomeModule,
     ContactModule,
     BlogModule
   ],

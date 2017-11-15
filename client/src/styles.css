@@ -5,3 +5,9 @@ body {
   font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial;
   margin: 0;
 }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}

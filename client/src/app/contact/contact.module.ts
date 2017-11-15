@@ -3,7 +3,7 @@ import { ContactComponent } from './contact.component';
 import { ContactFormComponent } from './contact-form.component';
 import { FormsModule }   from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { MatFormFieldModule, MatSelectModule, MatInputModule } from '@angular/material';
+import { MatFormFieldModule, MatSelectModule, MatInputModule, MatSnackBarModule } from '@angular/material';
 
 @NgModule({
   imports: [
@@ -11,7 +11,8 @@ import { MatFormFieldModule, MatSelectModule, MatInputModule } from '@angular/ma
     HttpClientModule,
     MatFormFieldModule,
     MatSelectModule,
-    MatInputModule
+    MatInputModule,
+    MatSnackBarModule
   ],
   exports: [
     MatFormFieldModule,
