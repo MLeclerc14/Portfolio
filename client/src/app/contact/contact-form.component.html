@@ -1,0 +1,22 @@
+<form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+
+  <mat-form-field>
+    <input matInput placeholder="Nom *"
+      [(ngModel)]="contact.name" name="name"
+      #name="ngModel">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Email *"
+    [(ngModel)]="contact.email" name="email"
+    #name="ngModel">
+  </mat-form-field>
+
+  <mat-form-field>
+    <textarea matInput placeholder="Message *"
+      [(ngModel)]="contact.message" name="message"></textarea>
+  </mat-form-field>
+
+  <input type="submit" value="Envoyer">
+
+</form>

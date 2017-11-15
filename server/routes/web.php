@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::domain('admin.maxime-leclerc.com')->group(function () {
+   
 });

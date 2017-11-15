@@ -19,8 +19,6 @@ const routes: Routes = [
   declarations: [
     HomeComponent,
     ProjectComponent,
-    BlogComponent,
-    ContactComponent,
     PageNotFoundComponent
   ],
   imports: [RouterModule.forRoot(routes)],

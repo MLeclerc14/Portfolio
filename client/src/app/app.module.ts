@@ -2,9 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
-import { MaterialModule } from './material.module';
+
 import { AppRoutingModule } from './app-routing.module';
+import { MaterialModule } from './material.module';
 import { BlogModule } from './blog/blog.module';
+import { ContactModule } from './contact/contact.module';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
@@ -17,11 +19,12 @@ import { FooterComponent } from './shared/footer/footer.component';
     FooterComponent
   ],
   imports: [
-    BlogModule,
     BrowserModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
     MaterialModule,
-    AppRoutingModule
+    ContactModule,
+    BlogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
