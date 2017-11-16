@@ -41,6 +41,10 @@ section h3 {
   background-color: #f8f8f8;
 }
 
+.bg-black {
+  background-color: #232328;
+}
+
 header  {
   text-align: center;
   height: 600px;
