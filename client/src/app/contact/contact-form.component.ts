@@ -10,7 +10,7 @@ import { Contact } from './contact';
 })
 export class ContactFormComponent {
 
-  contact = new Contact();
+  contact = new Contact('', '', '');
   results: string[];
 
   constructor(public snackbar: MatSnackBar, private http: HttpClient) {}
@@ -19,11 +19,11 @@ export class ContactFormComponent {
     this.http.get('/api/items').subscribe(
       data => {
         this.results = data['results'];
-        snackbar.open('Votre message a bien été envoyé !', 'Fermer', {
+        this.snackbar.open('Votre message a bien été envoyé !', 'Fermer', {
           duration: 3000
         });
       },
       error => console.log(error)
-    });
+    );
   }
 }

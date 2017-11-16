@@ -1,12 +1,14 @@
- <mat-toolbar color="primary">
+ <mat-toolbar class="transparent" [ngClass]="{ 'page-scroll-header': isScrolled }">
   <mat-toolbar-row>
-    <span>Maxime Leclerc</span>
+    <span class="logo"></span>
 
     <span class="spacer"></span>
 
-    <button routerLink="" routerLinkActive="active" mat-button>Accueil</button>
-    <button routerLink="about" routerLinkActive="active" mat-button>A propos</button>
-    <button routerLink="blog" routerLinkActive="active" mat-button>Blog</button>
-	  <button routerLink="contact" routerLinkActive="active" mat-button>Contact</button>
+    <ul class="nav-right">
+      <li><a class="nav-item" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Accueil</a></li>
+      <li><a class="nav-item" routerLink="about" routerLinkActive="active">A propos</a></li>
+      <li><a class="nav-item" routerLink="blog" routerLinkActive="active">Blog</a></li>
+  	  <li><a class="nav-item" routerLink="contact" routerLinkActive="active">Contact</a></li>
+    </ul>
   </mat-toolbar-row>
 </mat-toolbar>

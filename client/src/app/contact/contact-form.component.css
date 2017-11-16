@@ -1,0 +1,8 @@
+#form-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+#form-contact > input {
+  width: 100%;
+}

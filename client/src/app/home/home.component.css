@@ -1,22 +1,6 @@
 header {
-  text-align: center;
-  padding: 60px 0;
-  color: hsla(0,0%,100%,.87);
-  background-color: #3f51b5;;
-}
-
-h1.title {
-  font-size: 56px;
-  font-weight: 300;
-  line-height: 56px;
-  margin: 15px 5px;
-}
-
-h2.subtitle {
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 28px;
-  margin: 15px 0 25px 0;
+  background: url(../../assets/images/banner.jpg) no-repeat center fixed;
+  background-size: cover;
 }
 
 .nav-buttons {

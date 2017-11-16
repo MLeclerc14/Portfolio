@@ -1,1 +1,137 @@
- projets
+<header>
+  <div class="banner">
+    <h1 class="title">A propos</h1>
+    <h2 class="subtitle">dzdz</h2>
+  </div>
+</header>
+
+<section id="about">
+  <div class="container">
+    <h3>A propos</h3>
+    <p>
+      Je m'appelle Maxime Leclerc, j'ai {{ $age }} ans et j'habite près de Caen en région Basse-Normandie.
+      Passionné par le web depuis de nombreuses années, j'ai commencé à acquerir des compétences dans ce domaine en faisant un DUT informatique (option génie logiciel) après avoir obtenu mon bac scientifique (option sciences de l'ingénieur).
+      J'ai ensuite poursuivi mes études avec une licence professionnelle Activités et Techniques de Communication Webmestre afin de parfaire mes connaissances dans ce domaine.
+    </p>
+    <p>
+      Curieux et ayant conscience de l'importance de la veille technologique, je continue à exercer ma passion sur mon temps libre sur des technologies innovantes telles que Angular2 et VueJS.
+      Je suis aujourd'hui développeur web full-stack au sein d'une agence web digitale près de Caen.
+    </p>
+  </div>
+</section>
+
+<section id="education" class="bd-top bg-grey">
+  <div class="container">
+    <h3>Expériences professionelles</h3>
+    <mat-accordion class="example-headers-align">
+
+       <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle="true">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Développeur Web à NCI
+          </mat-panel-title>
+          <mat-panel-description>
+            De août 2017 à aujourd'hui
+            <mat-icon>account_circle</mat-icon>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-action-row>
+          <p>Développements de sites web sur mesure avec le framework PHP Laravel (v4/v5) ainsi que VueJS (v2).</p>
+          <p>Intégration de sites web avec les pré-processeurs SASS/LESS et le framework Bootstrap. </p>
+          <button mat-button color="primary" (click)="nextStep()">Suivant</button>
+        </mat-action-row>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(0)" hideToggle="true">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Développeur Web Full-Stack à Web Interactive
+          </mat-panel-title>
+          <mat-panel-description>
+            De janvier 2015 à août 2017
+            <mat-icon>account_circle</mat-icon>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-action-row>
+          <p>Développements de sites web sur mesure avec le framework PHP Laravel (v4/v5) ainsi que VueJS (v2).</p>
+          <p>Intégration de sites web avec les pré-processeurs SASS/LESS et le framework Bootstrap. </p>
+          <button mat-button color="primary" (click)="nextStep()">Suivant</button>
+        </mat-action-row>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(1)" hideToggle="true">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Développeur Web à la Chambre de Métiers
+          </mat-panel-title>
+          <mat-panel-description>
+            Stage de 3 mois - De avril à juillet 2014
+            <mat-icon>map</mat-icon>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-action-row>
+          <p>Développements de fonctionnalités sur l'extranet d'un site existant avec le framework PHP Symfony (v2) et jQuery (v2).</p>
+          <p>Mise en place de sauvegardes automatiques (tâches cron) et d'un certificat SSL.</p>
+          <button mat-button color="warn" (click)="prevStep()">Précédent</button>
+          <button mat-button color="primary" (click)="nextStep()">Suivant</button>
+        </mat-action-row>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel [expanded]="step === 3" (opened)="setStep(2)" hideToggle="true">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Développeur Web à la Tumorothèque
+          </mat-panel-title>
+          <mat-panel-description>
+            Stage de 2 mois - De avril à juin 2013
+            <mat-icon>date_range</mat-icon>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-action-row>
+          <p>Développement et intégration du site web de la tumorothèque de Caen Basse-Normandie.</p>
+          <p>Statistiques et création de graphiques à partir de la base de données médicale (MySQL).</p>
+          <button mat-button color="warn" (click)="prevStep()">Précédent</button>
+        </mat-action-row>
+      </mat-expansion-panel>
+
+    </mat-accordion>
+  </div>
+</section>
+
+<section id="skills" class="bd-top">
+  <div class="container">
+  <h3>Compétences</h3>
+  </div>
+</section>
+
+<section id="hobbies" class="bd-top bg-grey">
+  <div class="container">
+    <h3>Intérêts</h3>
+    <mat-tab-group>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon>computer</mat-icon>
+        </ng-template>
+        <p>...</p>
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon>headset</mat-icon>
+        </ng-template>
+        <p>...</p>
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon>fitness_center</mat-icon>
+        </ng-template>
+        <p>...</p>
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon>gamepad</mat-icon>
+        </ng-template>
+        <p>...</p>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</section>

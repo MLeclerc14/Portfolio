@@ -6,6 +6,54 @@
   z-index: 2;
 }
 
+.home-toolbar {
+  background-color: transparent;
+  top: 0;
+}
+
 .spacer {
   flex: 1 1 auto;
+}
+
+.transparent {
+  background-color: transparent;
+  color: white;
+}
+
+.page-scroll-header {
+  background-color: white;
+  transition: background 0.2s linear;
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+}
+
+a.nav-item {
+  font-weight: 700;
+  line-height: 1.9;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: color .3s ease,opacity .3s ease,padding .3s ease;
+}
+
+a.nav-item.active {
+  color: #ff5252 !important;
+}
+
+.transparent a.nav-item{
+  color: white;
+}
+
+.page-scroll-header a.nav-item {
+  color: #333;
+}
+
+.active {
+  border-bottom-color: #ff5252;
+}
+
+ul.nav-right {
+  display: inline-flex;
+}
+
+ul.nav-right li {
+  padding: 0 20px;
 }

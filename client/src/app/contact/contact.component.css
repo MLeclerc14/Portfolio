@@ -1,1 +1,4 @@
- 
+header {
+  background: url(../../assets/images/banner.jpg) no-repeat center fixed;
+  background-size: cover;
+}

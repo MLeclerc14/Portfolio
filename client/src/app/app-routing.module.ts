@@ -17,7 +17,6 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    AboutComponent,
     PageNotFoundComponent
   ],
   imports: [RouterModule.forRoot(routes)],
