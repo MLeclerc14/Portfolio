@@ -17,6 +17,6 @@ export class BlogComponent implements OnInit{
 
   getPosts(): void {
     this.BlogService.getAll()
-        .subscribe(posts => this.posts = posts);
+        .subscribe(posts => this.posts = posts.data.posts);
   }
 }
