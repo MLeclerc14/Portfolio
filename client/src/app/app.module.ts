@@ -21,7 +21,7 @@ import { FooterComponent } from './shared/footer/footer.component';
     FooterComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'my-app'}),
     BrowserAnimationsModule,
     AppRoutingModule,
     MaterialModule,

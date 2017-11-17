@@ -8,9 +8,9 @@ export class BlogService {
 
   constructor(private http: Http) {}
 
-  getAll(): Observable {
+  /*getAll(): Observable {
     return this.http
                .get('http://server.dev/api/posts')
                .map(response => response.json());
-  }
+  }*/
 }

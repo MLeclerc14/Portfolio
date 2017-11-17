@@ -7,7 +7,7 @@ import { BlogService } from './blog.service';
 })
 export class BlogComponent implements OnInit{
 
-  posts: Post[];
+  //posts: Post[];
 
   constructor(private BlogService: BlogService) { }
 
@@ -16,7 +16,7 @@ export class BlogComponent implements OnInit{
   }
 
   getPosts(): void {
-    this.BlogService.getAll()
-        .subscribe(posts => this.posts = posts.data.posts);
+    /*this.BlogService.getAll()
+        .subscribe(posts => this.posts = posts.data.posts);*/
   }
 }

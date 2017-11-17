@@ -9,7 +9,7 @@ import {
     MatCardModule,
     MatGridListModule,
     MatProgressBarModule,
-    MatExpansionModule.
+    MatExpansionModule,
     MatFormFieldModule,
     MatSelectModule,
     MatInputModule,
