@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { HomeService } from './home.service';
+import { Post } from '../blog/post';
 
 @Component({
   templateUrl: './home.component.html',
@@ -8,13 +10,16 @@ import { HttpClient } from '@angular/common/http';
 
 export class HomeComponent implements OnInit  {
 
-  posts: any[];
+  posts: Post[];
 
-  constructor(private http: HttpClient) {}
+  constructor(private homeService: HomeService) {}
 
   ngOnInit() {
-    this.http.get('http://server.dev/api/home').subscribe(res => {
-      this.posts = res.data.posts;
-    });
+    this.getPosts();
+  }
+
+  getPosts(): void {
+    this.homeService.getPosts()
+    .subscribe(posts => this.posts = posts);
   }
 }
