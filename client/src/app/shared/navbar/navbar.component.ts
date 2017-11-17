@@ -10,14 +10,13 @@ import { Router } from '@angular/router';
   }
 })
 export class NavbarComponent {
+  /** Position window variables **/
+  isScrolled: boolean = false;
+  currentPos: number = 0;
+  startPos: number = 0;
+  changePos: number = 100;
 
-  isScrolled = false;
-  currentPos: Number = 0;
-  startPos: Number = 0;
-  changePos: Number = 100;
-
-  constructor() {}
-
+  /** Change class header on scroll **/
   updateHeader(e) {
     this.currentPos = (window.pageYOffset || e.target.scrollTop) - (e.target.clientTop || 0);
     if (this.currentPos >= this.changePos) {
