@@ -1,15 +1,9 @@
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './home.component';
-import { MatButtonModule, MatCardModule, MatGridListModule } from '@angular/material';
+import { MaterialModule } from '../shared/material.module';
 
 @NgModule({
-  imports: [
-    MatButtonModule,
-    MatCardModule,
-    MatGridListModule
-  ],
-  declarations: [
-    HomeComponent
-  ]
+  imports: [MaterialModule],
+  declarations: [HomeComponent]
 })
 export class HomeModule { }

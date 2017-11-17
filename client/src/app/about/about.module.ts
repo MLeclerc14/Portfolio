@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
-import { MatTabsModule, MatListModule, MatButtonModule, MatIconModule, MatExpansionModule } from '@angular/material';
+import { BrowserModule } from '@angular/platform-browser';
+import { MaterialModule } from '../shared/material.module';
 import { AboutComponent } from './about.component';
 
 
 @NgModule({
-  imports: [MatTabsModule, MatIconModule, MatButtonModule, MatListModule, MatExpansionModule],
+  imports: [MaterialModule, BrowserModule],
   exports: [],
   declarations: [AboutComponent]
 })
