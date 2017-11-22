@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs/Rx';
 import { HomeService } from './home.service';
-import { Post } from '../blog/post';
 
 @Component({
   templateUrl: './home.component.html',
@@ -10,7 +10,7 @@ import { Post } from '../blog/post';
 
 export class HomeComponent implements OnInit  {
 
-  posts: Post[];
+  public posts: Observable<any>;
 
   constructor(private homeService: HomeService) {}
 
@@ -18,8 +18,8 @@ export class HomeComponent implements OnInit  {
     this.getPosts();
   }
 
-  getPosts(): void {
-    this.homeService.getPosts()
-    .subscribe(posts => this.posts = posts);
+  getPosts() {
+    console.log(this.homeService.getPosts());
+    //this.posts = this.homeService.getPosts().data.posts;
   }
 }
