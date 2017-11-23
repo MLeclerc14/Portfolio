@@ -8,7 +8,7 @@
 }
 
 header {
-  background-image: url(../../../assets/images/banner-blog.jpg);
+  background-image: url(../../../../assets/images/banner-blog.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -19,8 +19,4 @@ header {
 
 .example-card {
   width: 750px;
-}
-
-article {
-  margin: 45px 0;
 }

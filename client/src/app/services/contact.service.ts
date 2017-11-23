@@ -5,18 +5,18 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 
 @Injectable()
-export class HomeService {
+export class ContactService {
 
   constructor(private http: HttpClient) { }
 
   /**
-   * Get last 5 posts
+   * Post contact form
    *
    * @return Observable<any>
    */
-  list(): Observable<any> {
+  postContactForm(): Observable<any> {
     return this.http
-      .get(`http://server.dev/api/home`)
+      .get(`http://server.dev/contact/post`)
       .map((response: Response) => response);
   }
 }
