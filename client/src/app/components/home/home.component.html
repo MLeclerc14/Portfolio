@@ -95,8 +95,7 @@
   <div class="container">
     <h3>Derniers articles</h3>
     <mat-grid-list cols="4" rowHeight="500px">
-      {{ posts }}
-      <mat-grid-tile *ngFor="let post of posts | async">
+      <mat-grid-tile *ngFor="let post of posts">
         <mat-card class="example-card">
           <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
           <mat-card-content>

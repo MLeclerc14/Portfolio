@@ -4,15 +4,15 @@ import { NgModule } from '@angular/core';
 
 
 import { AppRoutingModule } from './app-routing.module';
-import { MaterialModule } from './shared/material.module';
-import { HomeModule } from './home/home.module';
-import { AboutModule } from './about/about.module';
-import { BlogModule } from './blog/blog.module';
-import { ContactModule } from './contact/contact.module';
+import { MaterialModule } from './components/shared/material.module';
+import { HomeModule } from './components/home/home.module';
+import { AboutModule } from './components/about/about.module';
+import { BlogModule } from './components/blog/blog.module';
+import { ContactModule } from './components/contact/contact.module';
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './shared/navbar/navbar.component';
-import { FooterComponent } from './shared/footer/footer.component';
+import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
 
 @NgModule({
   declarations: [
