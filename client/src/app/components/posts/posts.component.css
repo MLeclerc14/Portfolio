@@ -1,0 +1,9 @@
+header {
+  background-image: url(../../../assets/images/banner-blog.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 400px;
+  left: 0;
+  width: 100%;
+}

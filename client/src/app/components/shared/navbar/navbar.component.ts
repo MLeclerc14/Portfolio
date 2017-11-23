@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router }    from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -10,13 +10,18 @@ import { Router } from '@angular/router';
   }
 })
 export class NavbarComponent {
-  /** Position window variables **/
+
+ /*
+  * Window variables position
+  */
   isScrolled: boolean = false;
   currentPos: number = 0;
   startPos: number = 0;
   changePos: number = 100;
 
-  /** Change class header on scroll **/
+  /*
+   * Change class header onScroll
+   */
   updateHeader(e) {
     this.currentPos = (window.pageYOffset || e.target.scrollTop) - (e.target.clientTop || 0);
     if (this.currentPos >= this.changePos) {

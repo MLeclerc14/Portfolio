@@ -9,11 +9,7 @@ const postsRoutes: Routes = [
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forChild(postsRoutes)
-  ],
-  exports: [
-    RouterModule
-  ]
+  imports: [RouterModule.forChild(postsRoutes)],
+  exports: [RouterModule]
 })
 export class PostRoutingModule { }

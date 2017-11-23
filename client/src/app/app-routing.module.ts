@@ -16,9 +16,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [
-    PageNotFoundComponent
-  ],
+  declarations: [PageNotFoundComponent],
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
